@@ -1,6 +1,5 @@
-# FLArE
-Simulation code for R&D of the FLArE detector
-![nutau evt display](./flare_nutau_evd.jpg)
+# FORTVNE
+Simulation code for R&D of the FORward TeV Neutrino Experiment (FORTVNE), inherited from [FLArE's code](https://github.com/WenjieWu-Sci/FLArE).
 
 
 ## Setting up on lxplus
