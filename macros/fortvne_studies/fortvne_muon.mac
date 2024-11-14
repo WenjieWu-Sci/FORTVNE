@@ -1,0 +1,25 @@
+/control/execute macros/geometry_options/NuTeV-like_only.mac
+    
+/random/setSeeds 42 47
+/run/initialize
+
+/gps/verbose 0
+/gps/pos/type Point
+/gps/pos/centre 0 0 0 m
+/gps/direction 0 0 1
+/gps/particle mu-
+/gps/ene/type Lin
+/gps/ene/min 10 GeV
+/gps/ene/max 200 GeV
+/gps/ene/gradient 0
+/gps/ene/intercept 1
+
+/histo/save3DEvd false
+/histo/save2DEvd true
+/histo/saveHit false
+/histo/addDiffusion false
+/histo/samplingCalo true
+/histo/circleFit false
+/histo/fileName fortvne_muon.root
+
+/run/beamOn 200

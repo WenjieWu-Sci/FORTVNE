@@ -1,0 +1,26 @@
+/control/execute macros/geometry_options/NuTeV-like_only.mac
+    
+/random/setSeeds 42 47
+/run/initialize
+
+/gps/verbose 0
+/gps/pos/type Point
+/gps/pos/centre 0 0 0.1 m
+/gps/direction 0 0 1
+/gps/particle e-
+#/gps/ene/mono 19.999489 GeV
+/gps/ene/type Lin
+/gps/ene/min 100 MeV
+/gps/ene/max 10 GeV
+/gps/ene/gradient 0
+/gps/ene/intercept 1
+
+/histo/save3DEvd false
+/histo/save2DEvd true
+/histo/saveHit false
+/histo/addDiffusion false
+/histo/samplingCalo true
+/histo/circleFit false
+/histo/fileName fortvne_electron.root
+
+/run/beamOn 200

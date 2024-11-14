@@ -1,12 +1,12 @@
 # define detector material before run initialization
 /control/execute macros/geometry_options/NuTeV-like_only.mac
 
-/run/initialize
 /random/setSeeds 324199 420475
+/run/initialize
 
 # define genie input options
 /genie/useGenie true
-/genie/genieInput /eos/user/m/mvicenzi/genie/nutau_bai_ar40_e2000.gst.root
+/genie/genieInput /eos/user/m/mvicenzi/genie/numu_kling_ar40_e5000.gst.root
 /genie/genieIStart 5
 /genie/vtxOpt 2
 
@@ -16,7 +16,8 @@
 /histo/saveHit false
 /histo/addDiffusion false
 /histo/samplingCalo true
-/histo/fileName test_genie_nutau.root
+/histo/circleFit false
+/histo/fileName test_genie_numu.root
 
 # shoot 5 particles
 /run/beamOn 5
